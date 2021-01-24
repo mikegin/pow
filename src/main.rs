@@ -26,7 +26,7 @@ fn main() {
     let difficulty = 3;
     let u8_max: u8 = 255;
     let mut target: [u8; 32] = [u8_max; 32];
-    let u8_half: u8 = 15;
+    let one_zero: u8 = 15;
 
     //1 -> 0F loop 0 times, target[loop_times] = 0F
     //2 -> 00 loop 1 times
@@ -42,7 +42,7 @@ fn main() {
     }
 
     if !is_even {
-        target[loop_count] = u8_half;
+        target[loop_count] = one_zero;
     }
 
     // println!("{:?}", target);
